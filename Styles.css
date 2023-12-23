@@ -1,0 +1,282 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+}
+header {
+    background-color: #26292B;
+    color: aliceblue;
+    height: 90px;
+    width: 100%;
+}
+
+/* Contenido principal de la pagina */
+
+header h1, header p {
+    text-align: center;
+    padding-top: 4px;
+    text-shadow: 1px 1px 4px white;
+}
+#contenido {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+#contenido button {
+    width: 100vh;
+    height: 60vh;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+#contador {
+    margin-top: 3px;
+    font-weight: bold;
+    font-family: 'Courier New', arial;
+    font-size: 1.7em;
+}
+.botones {
+    border: none;
+    background-color: #0056b3;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+/* Panel de STOP */
+
+#fin {
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    top: 40%;
+    padding: 7px;
+}
+#fin::backdrop {
+    background-color: rgba(0, 0, 0, .55);
+}
+#Again {
+    display: flex;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#Again:hover {
+    background-color: gray;
+}
+
+/* Panel de Ajustes */
+
+#ajustes {
+    margin-left: 2vh;
+    margin-top: 2vh;
+    padding: 1px;
+    cursor: pointer;
+}
+#ajustesPanel {
+    border: none;
+    border-radius: 10px;
+    width: 50vh;
+    flex-direction: column;
+    top: 40%;
+    height: 40vh;
+}
+#ajustesPanel::backdrop {
+    background-color: rgba(0, 0, 0, .55);
+}
+.parametros {
+    font-weight: bold;
+    border: none;
+    margin: 1vh;
+    background-color: gray;
+    border-radius: 2px;
+}
+#time, #color {
+    font-weight: bold;
+    border: none;
+    float: right;
+    background-color: gray;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#guardar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.25s;
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+#guardar:hover {
+    background-color: gray;
+}
+#Cancelar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5vh;
+    padding-left: 19vh;
+    padding-right: 19vh;
+    cursor: pointer;
+}
+#guardar-cancelar {
+    margin-top: 20vh;
+}
+
+/* Tabla de puntos */
+
+#tabla-de-puntos {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 3);
+    width: 100vh;
+    display: flex;
+    margin-top: 3vh;
+}
+#tabla-de-puntos p{
+    display: inline;
+    padding-left: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/* Simbolos */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+@media (max-width: 800px) {
+    #contenido button {
+        width: 80vh;
+        height: 30;
+    }
+    #tabla-de-puntos {
+        width: 80vh;
+    }
+}
+
+@media (max-width: 575px) {
+    #contenido button {
+        width: 77vh;
+        height: 50vh;
+    }
+    #tabla-de-puntos {
+        width: 77vh;
+    }
+}
+
+@media (max-width: 550px) {
+    #contenido button {
+        width: 65vh;
+        height: 50vh;
+    }
+    #tabla-de-puntos {
+        width: 65vh;
+    }
+    #ajustes {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 470px) {
+    #contenido button {
+        width: 60vh;
+        height: 50vh;
+    }
+    #tabla-de-puntos {
+        width: 60vh;
+    }
+    #Cancelar {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    #guardar {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    #time, #color {
+        padding: 2px;
+    }
+    .parametros {
+        padding: 3px;
+    }
+    #ajustesPanel {
+        height: 42vh;
+    }
+    #contenido {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 430px) {
+    #contenido button {
+        width: 55vh;
+        height: 60vh;
+    }
+    #tabla-de-puntos {
+        width: 55vh;
+    }
+    #ajustesPanel {
+        top: 30%;
+    }
+}
+
+@media (max-width: 390px) {
+    #contenido button {
+        width: 50vh;
+        height: 60vh;
+    }
+    #tabla-de-puntos {
+        width: 50vh;
+    }
+}
+
+@media (max-width: 370px) {
+    #Cancelar {
+        padding-left: 16vh;
+        padding-right: 16vh;
+    }
+    #guardar {
+        padding-left: 17vh;
+        padding-right: 17vh;
+    }
+}
+
+@media (max-width: 360px) {
+    #contenido button {
+        width: 45vh;
+        height: 60vh;
+    }
+    #tabla-de-puntos {
+        width: 45vh;
+    }
+}
+
+@media (max-width: 320px) {
+    #contenido button {
+        width: 40vh;
+        height: 60vh;
+    }
+    #tabla-de-puntos {
+        width: 40vh;
+    }
+    #Cancelar {
+        padding-left: 15vh;
+        padding-right: 15vh;
+    }
+    #guardar {
+        padding-left: 16vh;
+        padding-right: 16vh;
+    }
+}
