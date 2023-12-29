@@ -8,7 +8,7 @@ Un proyecto de prueba de habilidades Front End (Desarrollo web).
 
 > [!IMPORTANT]
 Este proyecto no busca ser original ni destacar, pero tampoco he hecho plagio, lo comparto para otras personas que esten en su proceso de aprendizaje puedan verlo, y otras personas con mas conocimiento puedan darme recomendaciones con el mayor respeto posible.
-** Apesar de que la pagina busca ser responsive, pueda que no funcione en tables o en dispositivos con pantalla muy reducidas. **
+**Apesar de que la pagina busca ser responsive, pueda que no funcione en tables o en dispositivos con pantalla muy reducidas.**
 
 > [!CAUTION]
 Algunas funciones aun estan en desarrollo y pueda que no funcionen o no funcionen correctamente.
